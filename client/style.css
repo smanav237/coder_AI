@@ -94,6 +94,7 @@ body {
   scrollbar-width: none;
 }
 .message::-webkit-scrollbar {
+  -webkit-appearance: none;
   display: none;
 }
 
