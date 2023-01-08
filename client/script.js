@@ -72,7 +72,7 @@ const handleSubmit = async (e) => {
     const messageDiv = document.getElementById(uniqueId)  // specific message div
     loader(messageDiv)   // messageDiv.innerHTML = "..."
 
-    const response = await fetch('http://localhost:5000/', {
+    const response = await fetch('https://coder-ai.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
