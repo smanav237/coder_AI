@@ -41,7 +41,8 @@ body {
 
 /* hides scrollbar */
 #chat_container::-webkit-scrollbar {
-  display: none;
+  -webkit-appearance: none;
+  display:none;
 }
 
 .wrapper {
@@ -95,7 +96,7 @@ body {
 }
 .message::-webkit-scrollbar {
   -webkit-appearance: none;
-  display: none;
+  display:none
 }
 
 form {
@@ -134,4 +135,10 @@ button {
 form img {
   width: 35 px;
   height: 30px;
+}
+
+@media screen and (max-width: 768px){
+  ::-webkit-scrollbar {
+      -webkit-appearance: none;
+  }
 }
