@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans&family=Montserrat:ital,wght@0,500;1,400&family=Nunito:ital@1&family=Orbitron&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: #313131;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background: #313131;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#chat_container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+  overflow: scroll
+}
+
+/* hides scrollbar */
+#chat_container::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 15px;
+}
+
+.ai {
+  background: #414141;
+}
+
+.chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.profile {
+  width: 33px;
+  height: 33px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.message {
+  flex: 1;
+
+  color: #ffffff;
+  font-size: 20px;
+
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: pre-wrap; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.message::-webkit-scrollbar {
+  display: none;
+}
+
+form {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #525252;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+
+textarea {
+  width: 100%;
+
+  color: #ffffff;
+  font-size: 18px;
+
+  padding: 10px;
+  background: transparent;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+form img {
+  width: 35 px;
+  height: 30px;
+}
